@@ -1,0 +1,143 @@
+.desktopStores {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #000;
+  font-family: 'Avenir', sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+
+.desktopStoresOuter {
+  display: block;
+  width: 100%;
+}
+
+.desktopStores tr:nth-of-type(odd) {
+  background: #f0f0f0;
+}
+
+.desktopStores th {
+  background: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  text-wrap: nowrap;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.desktopStores td {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.desktopStores td.text-center,
+.desktopStores th.text-center {
+  text-align: center;
+}
+
+.mobileStoresOuter {
+  display: none;
+}
+
+.mobileStores {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  color: #000;
+  font-family: 'Avenir', sans-serif;
+  font-size: 14px;
+}
+
+#main .module .mobileStores p {
+  margin-bottom: 5px;
+}
+
+.mobileStores > li {
+  border: 1px solid #ccc;
+  padding: 20px 15px 15px;
+  margin-bottom: 20px;
+}
+
+.mobileServices {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: columns;
+  width: 100%;
+  margin-top: 20px;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+ul.mobileServices li {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  padding-bottom: 5px;
+  border-right: 1px solid #ccc;
+}
+
+.mobileHeader {
+  background: #f0f0f0;
+  color: #000;
+  margin-bottom: 5px;
+  font-weight: 600;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.filter {
+  display: flex;
+  text-wrap: nowrap;
+  align-items: center;
+}
+
+.filter select {
+  width: auto;
+  min-width: 300px;
+  margin-left: 10px;
+}
+
+.filterText {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#main .module h2.mobileStoreName {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.checkMark::before {
+  content: '\2713';
+}
+
+.xMark::before {
+  content: '\0020';
+}
+
+.no-opacity {
+  opacity: 0;
+}
+
+strong {
+  font-weight: 600;
+}
+
+@media print, screen and (max-width: 63.99999em) {
+  .desktopStoresOuter {
+    display: none;
+  }
+
+  .mobileStoresOuter {
+    display: block;
+  }
+}
